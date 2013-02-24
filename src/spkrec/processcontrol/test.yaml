@@ -1,0 +1,28 @@
+#test.yaml
+Type: global-variables
+Base_dir: '/home/ubuntu/project/backend-search/src/'
+Logfile: 'test.log'
+---
+Type: map-loader
+Source: spkrec.utils.testacc_maploader
+Number: 4
+Logging: True
+Call_Setup: True
+Setup_Returns: ['x', 'y']
+Arguments: ['x', 'y', '--DEBUG']
+On_Failure: Killall
+#---
+#Type: map
+#Source: spkrec.utils.testacc_map
+#Number: 2
+#Logging: True
+#Arguments: ['x', 'y', '--logging']
+#---
+#Type: reduce-loader
+#Source: spkrec.utils.testacc_reduceloader
+#Number: 1
+#Logging: True
+#Call_Setup: True
+#Setup_Returns: ['a', 'b']
+
+

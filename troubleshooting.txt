@@ -1,0 +1,10 @@
+Relevant environment variables:
+
+# Python search path
+
+export PYTHONPATH="/home/ubuntu/project/backend-search/src"
+
+# For JPype and Neo4j database
+export JAVA_HOME=/usr/lib/jvm/java-6-openjdk/jre/
+export PATH=$PATH:/usr/lib/jvm/java-6-openjdk/jre/bin
+
